@@ -52,5 +52,28 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
+
+nav_layer {
+    bindings = <
+        // Workspaces 1 a 9: Super+1..9
+        &kp LGUI_1 &kp LGUI_2 &kp LGUI_3 &kp LGUI_4 &kp LGUI_5 &kp LGUI_6 &kp LGUI_7 &kp LGUI_8 &kp LGUI_9
+
+        // Move janela para workspace: Super+Shift+1..9
+        &kp LSFT_LGUI_1 &kp LSFT_LGUI_2 &kp LSFT_LGUI_3 &kp LSFT_LGUI_4 &kp LSFT_LGUI_5 &kp LSFT_LGUI_6 &kp LSFT_LGUI_7 &kp LSFT_LGUI_8 &kp LSFT_LGUI_9
+
+        // Navegação entre janelas no i3
+        &kp LGUI_H   // foco esquerda
+        &kp LGUI_L   // foco direita
+        &kp LGUI_K   // foco acima
+        &kp LGUI_J   // foco abaixo
+
+        // Comandos extras
+        &kp LGUI_Q   // fechar janela (kill)
+        &kp LGUI_F   // fullscreen
+        &kp LGUI_SPACE // toggle floating
+    >;
+};
+
+
         };
 };
